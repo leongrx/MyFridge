@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #0597F2;
+    --secondary-color: #0CB1F2;
+    --third-color: #0420BF;
+    --fourth-color:#8C7F68;
+    --fifth-color: rgb(217, 217, 217);
+    --fifth-color-opacity01: rgba(217, 217, 217, 0.1);
+}
+
+body {
+    margin: 0;
+    background-color: var(--fifth-color-opacity01);
+}
+
+.headerContainer {
+    height: 120px;
+    background-color: var(--primary-color);
+}
+
+.recommendedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0 0 0;
+}
+
+.recommendedFood {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 300px;
+    border-radius: 12px;
+    background-color: var(--fifth-color);
+}
+
+.recommendedSign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 4px 8px;
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.recommendedImg {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}
