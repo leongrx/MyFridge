@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0597F2;
-    --secondary-color: #0CB1F2;
+    --secondary-color: rgb(12,177,242);
     --third-color: #0420BF;
     --fourth-color:#8C7F68;
     --fifth-color: rgb(217, 217, 217);
@@ -22,30 +22,78 @@ body {
     justify-content: center;
     align-items: center;
     margin: 48px 0 0 0;
+    flex-wrap: wrap;
 }
 
 .recommendedFood {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 500px;
     height: 300px;
     border-radius: 12px;
     background-color: var(--fifth-color);
+    margin: 8px;
+}
+
+.recommendedFood span {
+    text-align: center;
+}
+
+.recommendedTitle {
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 10px;
 }
 
 .recommendedSign {
+    position: absolute;
+    top: 5px;
+    left: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 50px;
-    border-radius: 4px 8px;
+    border-radius: 12px;
+    padding: 8px 12px;
     color: white;
     background-color: var(--secondary-color);
+    z-index: 1;
+    font-size: 20px;
+}
+
+.recommendedSign:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .recommendedImg {
-    width: 250px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    width: 500px;
+    height: 200px;
+}
+
+.foodPicture {
+    width: 400px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.recommendedArrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -55px;
+    right: 10px;
+}
+
+.recommendedArrow:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
