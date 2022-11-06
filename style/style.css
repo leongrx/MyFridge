@@ -1,30 +1,251 @@
 :root {
-    --primary-color: #0597F2;
-    --secondary-color: #0CB1F2;
-    --third-color: #0420BF;
-    --fourth-color:#8C7F68;
-    --fifth-color: rgb(217, 217, 217);
+    --primary-color: #ffffff;
+    --secondary-color: rgb(12, 177, 242);
+    --third-color: #0c87f2;
+    --fourth-color:#262627;
+    --fifth-color: rgb(247, 248, 249);
     --fifth-color-opacity01: rgba(217, 217, 217, 0.1);
     
 }
 
+
 body {
     margin: 0;
-    background-color: var(--fifth-color-opacity01);
-    min-height: 150vh;
+    background-color: var(--primary-color);
+    text-align: center;    
+   
+    
 }
 
-.headerContainer {
-    height: 30px;
-    background-color: var(--primary-color);
+.masterContainer {
+    
+    max-width: 1440px;
+    margin-left:auto;
+    margin-right:auto;
+  
+
 }
+
+
+.Headline1 {
+    font: 2em "Inter", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--fourth-color);
+    
+}
+
+.Headline2 {
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(116, 116, 118);
+
+}
+
+
+
+
+
+.headerContainer {
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    
+    padding-top: 8px;
+    position: fixed;
+    z-index: 9;
+    top: 0; 
+    
+    
+    
+}
+
+.header-left {
+    display: inline-block;
+    font: 1.2em "Inter", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 571px 10px 10px;
+    color: var(--third-color);
+    transition: 0.3s;
+
+}
+
+.header-left:hover {
+    cursor: pointer;
+    display: inline-block;
+    font: 1.2em "Inter", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 571px 10px 10px;
+    color: var(--fourth-color);
+
+}
+
+.header-right1 {
+
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1.5px solid #ececef;
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: rgb(150, 150, 154);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 25px;
+    transition: 0.3s;
+    
+    
+}
+
+.header-right1:hover {
+
+    cursor: pointer;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    border: 1.5px solid #ececef;
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: rgb(150, 150, 154);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 25px;
+    
+}
+
+
+.header-right2 {
+
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(12, 135, 242);
+    outline-style: none;
+    outline-width: 1.5px;
+    outline-color: var(--third-color);
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.3s;
+    
+}
+
+.header-right2:hover {
+
+    cursor: pointer;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(0, 103, 193);
+    outline-style: none;
+    outline-width: 1.5px;
+    outline-color: var(--third-color);
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+
+
+.header-right3 {
+
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(235, 236, 238);
+    outline-style: none;
+    outline-width: 1.5px;
+    outline-color: var(--fifth-color);
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--fourth-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.3s;
+
+}
+
+.header-right3:hover {
+
+    cursor: pointer;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(205, 206, 208);
+    outline-style: none;
+    outline-width: 1.5px;
+    outline-color: var(--fifth-color);
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--fourth-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+
+
+.mainContainer {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+
 
 .recommendedContainer {
     display: flex;
+    flex-direction: row;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    margin: 48px 0 0 0;
+    margin: 80px 20px 20px 20px;
 }
+
 
 .recommendedFood {
     display: flex;
@@ -38,6 +259,8 @@ body {
     
 }
 
+
+
 .recommendedFood span {
     text-align: center;
 }
@@ -49,16 +272,31 @@ body {
     width: 120px;
     height: 44px;
     border-radius: 25px;
-    color: white;
-    background: rgba(0, 157, 255, 0.503);
+    background: rgba(12, 135, 242, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(7px);
-    
-    
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    opacity: 1;
+    transition: 0.3s;
     
 }
 
-.recommendedImg {
+
+.recommendedSign:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    font: 1em "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    
+}
+
+
+/* recommendedImg currently not in use */
+
+.recommendedImg {   
     width: 400px;
     height: 200px;
     object-fit: cover;
@@ -66,31 +304,38 @@ body {
     
 }
 
-.recommendedTitle {
-font-weight: 700;
 
+
+.recommendedTitle {
+
+font: 1em "Inter", sans-serif;
+font-weight: 600;
+color: var(--fourth-color);
+margin-bottom: 4px;
+text-align: center;
 
 }
 
 .recommendedTextContainer {
     margin-top: 80px;
-    background: rgba(255, 255, 255, 0.61);
+    background: var(--fifth-color);
     border-radius: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    border: 1.5px none #0c87f2;
+    padding-top: 10px;
+    padding-bottom: 12px;
     padding-left: 12px;
     padding-right: 12px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(7px);
-
+    font: 0.9em "Inter", sans-serif;
+    text-align: center;
+    
 }
 
 
-
-
 .recommendedFoodBackground {
-    background-image: url(https://source.unsplash.com/D-vDQMTfAAU);
-    background-position: bottom;
+    
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
@@ -103,18 +348,30 @@ font-weight: 700;
     box-sizing: border-box;
     padding-left: 30px;
     padding-right: 30px;
-
+    transition: 0.3s;
 
 }
 
-
-
-
-
-.recommendedSign:hover {
+.recommendedFoodBackground:hover {
+    
     cursor: pointer;
-    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    filter: brightness(0.95);
 }
+
+
 
 .foodPicture {
     width: 400px;
@@ -124,18 +381,7 @@ font-weight: 700;
     margin-top: 20px;
 }
 
-.recommendedArrow {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    bottom: -55px;
-    right: 10px;
-}
 
-.recommendedArrow:hover {
-    cursor: pointer;
-    opacity: 0.8;
-}
 
 
 .MyFridgeContainer {
@@ -143,18 +389,21 @@ font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 48px 0 0 0;
-
+    margin: 30px 0 0 0;
+    position: sticky;
+    top: 67px;
 }
 
 
 .MyFridge {
-    height: 100px;
-    width: 600px;
-    background: var(--fifth-color);
+    min-height: 100px;
+    width: 1000px;
+    background: rgba(247, 248, 249, 0.75);
     border-radius: 18px;
-    padding: 20px;
-    
+    padding: 50px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(7px);
 
 }
 
@@ -162,24 +411,198 @@ font-weight: 700;
 .Ingredient {
     background: rgb(255, 255, 255);
     border-radius: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     display: inline-block;
     margin: 5px;
-
-
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
 
 }
 
-.editIcon {
-    width: 12px;
-    height: 12px;
-    background-color: #0420BF;
+.Ingredient:hover {
+    cursor: pointer;
+    background: #e6ecf4;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     display: inline-block;
-    margin-left: 5px;
-    margin-right: 2px;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
 
+}
+
+.Ingredient.active {
+    background: #0c87f2;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    transition: 0.3s;
+
+}
+
+
+.recipeContainer {
     
+    min-height: 100px;
+    text-align: center;
+    
+}
+
+.Recipe {
+    width: 600px;
+    margin: 30px;
+    background: rgb(241, 241, 241);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font: 0.9em "Inter", sans-serif;
+    display: inline-block;
+}
+  
+.recipeFeed {
+    visibility: hidden;
+    
+}
+
+.recipeFeed.active {
+    visibility: visible;
+
+}
+
+
+
+.IngredientAdd {
+    background: rgb(255, 255, 255);
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color:  #05b44e;
+    transition: 0.3s;
+    border: 1.5px solid #05b44e;
+}
+
+.IngredientAdd:hover {
+    cursor: pointer;
+    background: #e6f4ea;
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color:  #05b44e;
+    transition: 0.3s;
+    border: 1.5px solid #05b44e;
+}
+
+
+
+.IngredientRemove {
+    background: rgb(255, 255, 255);
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color:  #b40505;
+    transition: 0.3s;
+    border: 1.5px solid #b40505;
+}
+
+.IngredientRemove:hover {
+    cursor: pointer;
+    background: #f4e6e6;
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color:  #b40505;
+    transition: 0.3s;
+    border: 1.5px solid #b40505;
+}
+
+.IngredientRemove.active {
+    background: #b40505;
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color:  #ffffff;
+    transition: 0.3s;
+    border: 1.5px solid #b40505;
+}
+
+
+
+
+.IngredientQuickSearch {
+    background: rgb(255, 255, 255);
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color:  #0c87f2;
+    transition: 0.3s;
+    border: 1.5px solid #0c87f2;
+}
+
+.IngredientQuickSearch:hover {
+    cursor: pointer;
+    background: #e6e8f4;
+    border-radius: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin: 5px;
+    font: 0.9em "Inter", sans-serif;
+    font-weight: 500;
+    color:  #0c87f2;
+    transition: 0.3s;
+    border: 1.5px solid #0c87f2;
 }
